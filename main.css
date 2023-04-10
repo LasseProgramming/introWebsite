@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Helvetica;
+}
+
+
+body {
+    background-color: rgb(234, 236, 252);
+    color: rgb(0, 0, 0);
+    display: flex;
+
+}
+
+nav {
+    width: 200px;
+    position: fixed;
+    background-color: rgb(43, 43, 43);
+    background: linear-gradient(180deg, rgba(43, 43, 43, 1) 0%, rgba(63, 63, 63, 1) 84%);
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.2s;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    border-right: 3px solid black;
+
+}
+
+nav:hover {
+    width: 200px;
+    transition: 0.2s;
+}
+
+nav a,
+nav label {
+    height: 70px;
+    text-align: center;
+    display: block;
+    color: whitesmoke;
+    font-size: 40px;
+    font-family: Helvetica;
+    font-weight: bold;
+    position: relative;
+
+}
+
+.navItem {
+    font-size: 20px;
+    position: absolute;
+    top: 25px;
+    left: 75px;
+}
+
+nav a:hover {
+    background-color: rgb(70, 70, 70);
+
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    position: fixed;
+    left: 0;
+
+}
+
+.fa {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    margin-top: 15px;
+}
+
+main {
+    display: inline-block;
+    margin-left: 200px;
+}
+
+.enviromentBox {
+    width: 100%;
+    height: 100%;
+    margin-left: 200px;
+
+}
+
+
+@media (max-width: 1000px) {
+    nav {
+        width: 70px;
+    }
+
+    .enviromentBox {
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 700px) {
+    nav:hover {
+        width: 70px;
+    }
+}
+
+
+.page {
+    max-width: 1000px;
+    min-width: 400px;
+    height: 100%;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    margin: 30px auto;
+    background-color: whitesmoke;
+
+}
+
+.pageText {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    min-width: 200px;
+    max-width: 500px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 100px auto 100px auto;
+    text-align: center;
+    padding: 30px;
+}
+
+h3 {
+    font-weight: lighter;
+
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h3 {
+    letter-spacing: 3px;
+    line-height: 0;
+}
+
+.breakline {
+    border: 2px solid black;
+    border-radius: 1000px;
+    margin-bottom: 30px;
+}
+
+section article {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.subsectionHeader h2 {
+    line-height: 0;
+}
+
+.jobCountry {
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .pcNavButton {
+        display: none;
+    }
+}
+
+@media (min-width: 700px) {
+
+    .appNavButton {
+        display: none;
+    }
+}
+
+/*hide the inputs/checkmarks and submenu*/
+input,
+ul.submenu {
+    display: none;
+}
+
+/*position the label*/
+label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+/*show the submenu when input is checked*/
+input:checked~ul.submenu {
+    display: block;
+}
